@@ -21,11 +21,9 @@ namespace LCRGame.ViewModel
 
         public void Execute(object parameter)
         {
-            if (parameter != null)
-            {
-                _execute(parameter);
-            }
+            _execute(parameter);
         }
+
         public event EventHandler CanExecuteChanged
         {
             add { CommandManager.RequerySuggested += value; }
